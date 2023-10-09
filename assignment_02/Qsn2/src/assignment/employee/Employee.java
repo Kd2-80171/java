@@ -1,0 +1,56 @@
+/*Q2. Create a class called Employee that includes three fields—a first name (type String), a last
+name (type String) and a monthly salary (double). Provide a constructor that initializes the three
+instance variables. Provide a set and a get method for each instance variable. If the monthly salary
+is not positive, do not set its value. Write a test application named EmployeeTest that demonstrates
+class Employee’s capabilities. Create two Employee objects and display each object’s yearly salary.
+Then give each Employee a 10% raise and display each Employee’s yearly salary again.*/
+
+package assignment.employee;
+
+public class Employee {
+	 private String Firstname;
+	 private String Lastname;
+	 private double  monthlysalary;
+	 
+	 public Employee(String Firstname , String Lastname , double salary) 
+	 {
+		 this.Firstname = Firstname;
+		 this.Lastname = Lastname;
+	 }
+
+	public String getFirstname() {
+		return Firstname;
+	}
+
+	public void setFirstname(String firstname) {
+		Firstname = firstname;
+	}
+
+	public String getLastname() {
+		return Lastname;
+	}
+
+	public void setLastname(String lastname) {
+		Lastname = lastname;
+	}
+
+	public double getyearlySalary() {
+		return monthlysalary * 12;
+	}
+
+	public void setmonthlySalary(double monthlysalary)
+	{
+		if(monthlysalary > 0.0) {
+			this.monthlysalary = monthlysalary;
+		}else {
+			this.monthlysalary =0.0;
+		}
+		
+	}
+	 public void  applyraise (double percentage) {
+		 double raiseAmount =(percentage / 100.0) * monthlysalary;
+		 monthlysalary += raiseAmount;
+	 }
+	 
+
+}

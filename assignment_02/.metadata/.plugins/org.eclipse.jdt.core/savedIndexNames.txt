@@ -1,0 +1,6 @@
+INDEX VERSION 1.131+/home/sunbeam/Desktop/java_assignments/assignment_02/.metadata/.plugins/org.eclipse.jdt.core
+3827029561.index
+2468144815.index
+2055160730.index
+1865797976.index
+169195285.index

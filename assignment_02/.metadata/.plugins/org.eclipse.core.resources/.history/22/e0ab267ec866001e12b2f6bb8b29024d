@@ -1,0 +1,10 @@
+
+public class TestDate {
+
+	
+	public static void main (String  [] ergs) {
+		Date date = new Date(10 ,11 ,2022);
+		
+		System.out.println(date.month +"/"+date.day+"/"+date.year);
+	}
+}
